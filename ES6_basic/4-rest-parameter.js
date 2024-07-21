@@ -1,4 +1,4 @@
 /* eslint-disable */
 export default function returnHowManyArguments() {
-    return arguments.length;
+    return args.length;
 }
