@@ -52,6 +52,7 @@ class Server:
         return dataset[start_index:end_index]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
+        '''Hypermedia pagination'''
         data = self.get_page(page, page_size)
 
         dataset = self.dataset()
