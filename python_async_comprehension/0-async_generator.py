@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+
+"""Async Generator"""
 import asyncio
 import random
-"""Async Generator"""
 
 
 async def async_generator():
