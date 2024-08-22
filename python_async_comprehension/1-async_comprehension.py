@@ -6,5 +6,4 @@ from typing import List
 
 async def async_comprehension() -> List[float]:
     """Async Comprehensions"""
-    result = [i async for i in async_generator()]
-    return result
+    return [number async for number in async_generator()]
