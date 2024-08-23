@@ -7,7 +7,7 @@ import pymongo
 
 if __name__ == "__main__":
     """
-    Log stats
+    Logs...
     """
     client = pymongo.MongoClient('mongodb://127.0.0.1:27017')
     collection = client.logs.nginx
