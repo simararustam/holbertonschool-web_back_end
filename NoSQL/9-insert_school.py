@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-'''Insert a document in Python'''
+"""
+Insert Docs int the Collection
+"""
 import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
-    '''Inserts a new document into a MongoDB collection.'''
-    if len(kwargs) == 0:
-        return None
-    return mongo_collection.insert(kwargs)
+    """
+    Insert Docs
+    """
+    result = mongo_collection.insert_one(kwargs)
+    return result.inserted_id
