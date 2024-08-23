@@ -13,5 +13,5 @@ def list_all(mongo_collection):
     list: A list of all documents in the collection,
     or an empty list if no documents are found.
     """
-    docs = list(mongo_collection)
+    docs = list(mongo_collection.find())
     return docs
